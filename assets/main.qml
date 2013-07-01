@@ -5,6 +5,8 @@ NavigationPane {
     peekEnabled: false
     id: navigationPane
     property Page playPage
+    property Page playPage2
+    
     function startGame(){
         playPage.startGame();
     }
@@ -84,6 +86,36 @@ NavigationPane {
                     ComponentDefinition {
                         id: playPageDefinition
                         source: "playPage.qml"
+                    }
+                ]
+            }
+            ImageView {
+                imageSource: "asset:///playbutton.png"
+                
+                layoutProperties: AbsoluteLayoutProperties {
+                    positionX: 850
+                    positionY: 290
+                }
+                onTouch: {
+                    // show detail page when the button is clicked
+                    if (! playPage2) {
+                        playPage2 = getplay2Page();
+                    }
+                    console.debug("pushing detail " + playPage2)
+                    navigationPane.push(playPage2);
+                    playPage2.startGame();
+                }
+                function getplay2Page() {
+                    if (! playPage2) {
+                        playPage2 = playPage2Definition.createObject();
+                    }
+                    return playPage2;
+                }
+                attachedObjects: [
+                    
+                    ComponentDefinition {
+                        id: playPage2Definition
+                        source: "play2Page.qml"
                     }
                 ]
             }
