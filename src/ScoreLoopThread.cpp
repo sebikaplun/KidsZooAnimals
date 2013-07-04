@@ -130,6 +130,7 @@ void ScoreLoopThread::RequestUserCompletionCallback(void *userData, SC_Error_t c
 	/* Check completion status */
 	if (completionStatus != SC_OK)
 	{
+		emit(instance()->ScoreLoopUserError());
 		SC_UserController_Release(app->userController); /* Cleanup Controller */
 		HandleError(app, completionStatus);
 		return;

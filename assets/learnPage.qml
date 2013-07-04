@@ -34,7 +34,7 @@ Page {
         imageViewRight.imageSource = "asset:///images/animals/" + lista[index + 1].imageName;
         imageViewLeft.imageSource = "asset:///images/animals/" + lista[lista.length - 1].imageName; //ACA HAY QUE CAMBIAR CON EL LENGHT
 
-        lblMain1.text = lista[index].backgroundSound ;
+        lblMain1.text = lista[index].backgroundSound;
 
         player.sourceUrl = "sounds/" + lista[index].animalSound;
         playerAnimal.sourceUrl = "sounds/" + lista[index].pressedSound;
@@ -124,6 +124,17 @@ Page {
                     }
                     move:
                     0;
+                } else if (event.isCancel()) {
+                    if (xLast > xOrigin) {
+                        timeToAnimate = slideLayoutLeft.translationX / 2
+                        finishAnimationLeft.play();
+                        slideLayout.opacity = 255;
+                    } else {
+                        console.log(move);
+                        timeToAnimate = slideLayoutRight.translationX / 2
+                        finishAnimationRight.play();
+                        slideLayout.opacity = 255;
+                    }
                 }
             }
             Container {
@@ -207,7 +218,7 @@ Page {
                             }
                             index = index + 1;
                             imageView.imageSource = "asset:///images/animals/" + lista[index].imageName;
-                            lblMain1.text = lista[index].backgroundSound ;
+                            lblMain1.text = lista[index].backgroundSound;
 
                             moveingFromLeft.play();
                         }

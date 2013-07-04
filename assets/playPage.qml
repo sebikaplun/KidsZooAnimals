@@ -5,6 +5,7 @@ import bb.data 1.0
 Page {
     property int width
     property int height
+    property Page leaderboradPage;
     property int points: 0
     property int level: 1
     property int latestPoint: 0 
@@ -40,9 +41,13 @@ Page {
             ActionBar.placement: ActionBarPlacement.Default
             onTriggered: {
                 //scoreloopDialog.close();
-                var page = leaderPageDefinition.createObject();
+                if(leaderboradPage == null ){
+                    leaderboradPage = leaderPageDefinition.createObject();
+                    console.log("se crea leaderboard page")    
+                }
                 navigationPane.backButtonsVisible = true
-                navigationPane.push(page);
+                leaderboradPage.startPage();
+                navigationPane.push(leaderboradPage);
             }
         }
     ]

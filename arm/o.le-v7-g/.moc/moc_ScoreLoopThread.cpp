@@ -22,25 +22,27 @@ static const uint qt_meta_data_ScoreLoopThread[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       4,       // signalCount
+       5,       // signalCount
 
  // signals: signature, parameters, type, tag, flags
       21,   17,   16,   16, 0x05,
-      61,   52,   16,   16, 0x05,
-     101,   91,   16,   16, 0x05,
-     152,  136,   16,   16, 0x05,
+      52,   16,   16,   16, 0x05,
+      82,   73,   16,   16, 0x05,
+     122,  112,   16,   16, 0x05,
+     173,  157,   16,   16, 0x05,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_ScoreLoopThread[] = {
     "ScoreLoopThread\0\0app\0"
-    "ScoreLoopUserReady(AppData_t*)\0username\0"
+    "ScoreLoopUserReady(AppData_t*)\0"
+    "ScoreLoopUserError()\0username\0"
     "RequestUserCompleted(QString)\0scoreData\0"
     "SubmitScoreCompleted(ScoreData_t*)\0"
     "leaderboardData\0LoadLeaderboardCompleted(QVariantList)\0"
@@ -53,9 +55,10 @@ void ScoreLoopThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         ScoreLoopThread *_t = static_cast<ScoreLoopThread *>(_o);
         switch (_id) {
         case 0: _t->ScoreLoopUserReady((*reinterpret_cast< AppData_t*(*)>(_a[1]))); break;
-        case 1: _t->RequestUserCompleted((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 2: _t->SubmitScoreCompleted((*reinterpret_cast< ScoreData_t*(*)>(_a[1]))); break;
-        case 3: _t->LoadLeaderboardCompleted((*reinterpret_cast< QVariantList(*)>(_a[1]))); break;
+        case 1: _t->ScoreLoopUserError(); break;
+        case 2: _t->RequestUserCompleted((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 3: _t->SubmitScoreCompleted((*reinterpret_cast< ScoreData_t*(*)>(_a[1]))); break;
+        case 4: _t->LoadLeaderboardCompleted((*reinterpret_cast< QVariantList(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -93,9 +96,9 @@ int ScoreLoopThread::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }
@@ -108,23 +111,29 @@ void ScoreLoopThread::ScoreLoopUserReady(AppData_t * _t1)
 }
 
 // SIGNAL 1
-void ScoreLoopThread::RequestUserCompleted(QString _t1)
+void ScoreLoopThread::ScoreLoopUserError()
 {
-    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
-    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+    QMetaObject::activate(this, &staticMetaObject, 1, 0);
 }
 
 // SIGNAL 2
-void ScoreLoopThread::SubmitScoreCompleted(ScoreData_t * _t1)
+void ScoreLoopThread::RequestUserCompleted(QString _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
 // SIGNAL 3
-void ScoreLoopThread::LoadLeaderboardCompleted(QVariantList _t1)
+void ScoreLoopThread::SubmitScoreCompleted(ScoreData_t * _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
+}
+
+// SIGNAL 4
+void ScoreLoopThread::LoadLeaderboardCompleted(QVariantList _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 QT_END_MOC_NAMESPACE

@@ -47,6 +47,7 @@ static void HandleError(AppData_t *app, SC_Error_t error);
 
 signals:
 void ScoreLoopUserReady(AppData_t *app);
+void ScoreLoopUserError();
 void RequestUserCompleted(QString username);
 void SubmitScoreCompleted(ScoreData_t *scoreData);
 void LoadLeaderboardCompleted(QVariantList leaderboardData);

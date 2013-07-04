@@ -20,6 +20,19 @@
     </message>
 </context>
 <context>
+    <name>Leaderboard</name>
+    <message>
+        <location filename="../assets/Leaderboard.qml" line="158"/>
+        <source>Connection fail</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../assets/Leaderboard.qml" line="159"/>
+        <source>Press OK to continue in application, Cancel to quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>RegistrationHandler</name>
     <message>
         <location filename="../src/RegistrationHandler.cpp" line="37"/>
@@ -93,7 +106,7 @@
 <context>
     <name>playPage</name>
     <message>
-        <location filename="../assets/playPage.qml" line="136"/>
+        <location filename="../assets/playPage.qml" line="141"/>
         <source>Hello World</source>
         <translation type="unfinished"></translation>
     </message>

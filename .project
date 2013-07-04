@@ -3,6 +3,7 @@
 	<name>KidsZooAnimals</name>
 	<comment></comment>
 	<projects>
+		<project>PruebaTabed</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -22,7 +23,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildArguments</key>
-					<value>-j1</value>
+					<value>-j3</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildCommand</key>
