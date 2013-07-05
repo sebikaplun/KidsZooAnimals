@@ -7,6 +7,8 @@
 
 #include <scoreloop/scoreloopcore.h>
 #include "ScoreLoopThread.hpp"
+#include <Flurry.h>
+
 
 #ifndef NDEBUG
 #include <assert.h>
@@ -162,6 +164,7 @@ void ScoreLoopThread::RequestUserCompletionCallback(void *userData, SC_Error_t c
 void ScoreLoopThread::HandleError(AppData_t *app, SC_Error_t error)
 {	/* Log the error */
 	qDebug() << SC_MapErrorToStr(error);
+
 }
 
 void ScoreLoopThread::SubmitScore(AppData_t *app, double result, unsigned int mode)

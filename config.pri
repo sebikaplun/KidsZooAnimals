@@ -3,11 +3,18 @@ BASEDIR =  $$quote($$_PRO_FILE_PWD_)
 
 device {
     CONFIG(debug, debug|release) {
-        INCLUDEPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop)
+        INCLUDEPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop) \
+                 $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0)
 
-        DEPENDPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop)
+        DEPENDPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop) \
+                 $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0)
 
-        LIBS += -lscoreloopcore
+        LIBS += -lFlurry \
+                -lscoreloopcore
+
+        LIBS +=  $$quote(-L/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7)
+
+        PRE_TARGETDEPS +=  $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7)
 
         SOURCES +=  $$quote($$BASEDIR/src/RegistrationHandler.cpp) \
                  $$quote($$BASEDIR/src/ScoreLoopThread.cpp) \
@@ -25,11 +32,18 @@ device {
     }
 
     CONFIG(release, debug|release) {
-        INCLUDEPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop)
+        INCLUDEPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop) \
+                 $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0)
 
-        DEPENDPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop)
+        DEPENDPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop) \
+                 $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0)
 
-        LIBS += -lscoreloopcore
+        LIBS += -lFlurry \
+                -lscoreloopcore
+
+        LIBS +=  $$quote(-L/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7)
+
+        PRE_TARGETDEPS +=  $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7)
 
         SOURCES +=  $$quote($$BASEDIR/src/RegistrationHandler.cpp) \
                  $$quote($$BASEDIR/src/ScoreLoopThread.cpp) \
@@ -49,11 +63,18 @@ device {
 
 simulator {
     CONFIG(debug, debug|release) {
-        INCLUDEPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop)
+        INCLUDEPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop) \
+                 $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0)
 
-        DEPENDPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop)
+        DEPENDPATH +=  $$quote(${QNX_TARGET}/usr/include/scoreloop) \
+                 $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0)
 
-        LIBS += -lscoreloopcore
+        LIBS += -lFlurry \
+                -lscoreloopcore
+
+        LIBS +=  $$quote(-L/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/x86)
+
+        PRE_TARGETDEPS +=  $$quote(/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/x86)
 
         SOURCES +=  $$quote($$BASEDIR/src/RegistrationHandler.cpp) \
                  $$quote($$BASEDIR/src/ScoreLoopThread.cpp) \

@@ -36,6 +36,7 @@ public:
 	}
 
     Q_PROPERTY(QString connectionStatus READ getConnectionStatus WRITE setConnectionStatus)
+    Q_INVOKABLE void logEvent(const QString & eventName, bool timedEvent = false);
 
     QString getConnectionStatus();
     void setConnectionStatus(QString value);

@@ -159,3 +159,10 @@ void ApplicationUI::shareBBMStatus(QString objectName) {
 	m_userProfile->requestUpdatePersonalMessage(personalMessageString);
 }
 
+// Log a standard or timed event
+void ApplicationUI::logEvent(const QString & eventName, bool timedEvent) {
+	qDebug() << "Logging event: " << eventName;
+	qDebug() << "Timed: " << timedEvent;
+	Flurry::Analytics::LogEvent(eventName, timedEvent);
+}
+

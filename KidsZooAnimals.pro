@@ -9,6 +9,7 @@ LIBS += -lbbdevice
 LIBS += -lbbmultimedia
 LIBS += -lscoreloopcore -lbbsystem -lbbplatform
 LIBS += -lbbplatformbbm
+LIBS += ­-lscreen -­lcrypto -­lcurl -­lpackageinfo -­lbbdevice
 
 device {
     CONFIG(debug, debug|release) {

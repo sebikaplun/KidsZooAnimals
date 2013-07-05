@@ -69,19 +69,23 @@
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm/o.le-v7-g/KidsZooAnimals" entry="true" type="Qnx/Elf">KidsZooAnimals</asset>
+       <asset path="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
     </configuration>
     <configuration name="Device-Release">
        <entryPointType>Qnx/Cascades</entryPointType>
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm/o.le-v7/KidsZooAnimals.so" entry="true" type="Qnx/Elf">KidsZooAnimals.so</asset>
+       <asset path="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
     </configuration>
     <configuration name="Device-Profile">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm-p/o.le-v7-g/KidsZooAnimals" entry="true" type="Qnx/Elf">KidsZooAnimals</asset>
+       <asset path="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
     </configuration>
     <configuration name="Simulator-Debug">
        <platformArchitecture>x86</platformArchitecture>
        <asset path="x86/o-g/KidsZooAnimals" entry="true" type="Qnx/Elf">KidsZooAnimals</asset>
+       <asset path="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/x86/libFlurry.a" type="Qnx/Elf">lib/libFlurry.a</asset>
     </configuration>
     
     <!--  The icon for the application -->
@@ -102,6 +106,7 @@
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>
     <permission>bbm_connect</permission>
+    <permission>read_device_identifying_information</permission>
     <env var="LD_LIBRARY_PATH" value="app/native/lib:/usr/lib/qt4/lib"/>
 
 </qnx>

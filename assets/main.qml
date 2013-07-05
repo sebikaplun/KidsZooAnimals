@@ -60,7 +60,7 @@ NavigationPane {
             }
 
             ImageView {
-                imageSource: "asset:///playbutton.png"
+                imageSource: "asset:///leaderbutton.png"
 
                 layoutProperties: AbsoluteLayoutProperties {
                     positionX: 850
@@ -74,6 +74,7 @@ NavigationPane {
                     console.debug("pushing detail " + playPage)
                     navigationPane.push(playPage);
                     playPage.startGame();
+                    appContext.logEvent("Game started");
                 }
                 function getplayPage() {
                     if (! playPage) {
@@ -94,7 +95,7 @@ NavigationPane {
                 
                 layoutProperties: AbsoluteLayoutProperties {
                     positionX: 850
-                    positionY: 290
+                    positionY: 310
                 }
                 onTouch: {
                     // show detail page when the button is clicked
@@ -104,6 +105,7 @@ NavigationPane {
                     console.debug("pushing detail " + playPage2)
                     navigationPane.push(playPage2);
                     playPage2.startGame();
+                    appContext.logEvent("Leaderboard from main page");
                 }
                 function getplay2Page() {
                     if (! playPage2) {
@@ -112,16 +114,17 @@ NavigationPane {
                     return playPage2;
                 }
                 attachedObjects: [
-                    
                     ComponentDefinition {
                         id: playPage2Definition
-                        source: "play2Page.qml"
+                        source: "Leaderboard.qml"
                     }
                 ]
             }
         }
     }
     onCreationCompleted: {
+        appContext.logEvent("Application loaded");
+
         // this slot is called when declarative scene is created
         // write post creation initialization here
         //console.log("NavigationPane - onCreationCompleted()");

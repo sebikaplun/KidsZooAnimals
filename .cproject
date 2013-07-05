@@ -26,6 +26,7 @@
 							<tool id="com.qnx.qcc.tool.compiler.521711854" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.54167325" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1075155591" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/scoreloop"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1574096293" superClass="com.qnx.qcc.inputType.compiler"/>
@@ -36,6 +37,10 @@
 							<tool id="com.qnx.qcc.tool.linker.982094335" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.libraries.1370380741" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
 									<listOptionValue builtIn="false" value="scoreloopcore"/>
+									<listOptionValue builtIn="false" value="Flurry"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1308856143" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7"/>
 								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.2005094632" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
@@ -73,6 +78,7 @@
 							<tool id="com.qnx.qcc.tool.compiler.213685870" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1106487958" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.538802908" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/scoreloop"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.935403045" superClass="com.qnx.qcc.inputType.compiler"/>
@@ -83,6 +89,10 @@
 							<tool id="com.qnx.qcc.tool.linker.1930074537" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.libraries.227765277" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
 									<listOptionValue builtIn="false" value="scoreloopcore"/>
+									<listOptionValue builtIn="false" value="Flurry"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1006020421" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7"/>
 								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.2145054157" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
@@ -118,6 +128,7 @@
 							<tool id="com.qnx.qcc.tool.compiler.1760876547" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1616468370" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.518823658" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/scoreloop"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.25114100" superClass="com.qnx.qcc.inputType.compiler"/>
@@ -128,6 +139,10 @@
 							<tool id="com.qnx.qcc.tool.linker.750683298" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.libraries.1858242458" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
 									<listOptionValue builtIn="false" value="scoreloopcore"/>
+									<listOptionValue builtIn="false" value="Flurry"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.1844616036" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/armle-v7"/>
 								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.2142244511" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
@@ -163,6 +178,7 @@
 							<tool id="com.qnx.qcc.tool.compiler.1136361480" name="QCC Compiler" superClass="com.qnx.qcc.tool.compiler">
 								<option id="com.qnx.qcc.option.compiler.optlevel.1354369109" name="Optimization Level" superClass="com.qnx.qcc.option.compiler.optlevel" value="com.qnx.qcc.option.compiler.optlevel.0" valueType="enumerated"/>
 								<option id="com.qnx.qcc.option.compiler.includePath.1380258752" name="Include Directories (-I)" superClass="com.qnx.qcc.option.compiler.includePath" valueType="includePath">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0"/>
 									<listOptionValue builtIn="false" value="${QNX_TARGET}/usr/include/scoreloop"/>
 								</option>
 								<inputType id="com.qnx.qcc.inputType.compiler.1197350280" superClass="com.qnx.qcc.inputType.compiler"/>
@@ -173,6 +189,10 @@
 							<tool id="com.qnx.qcc.tool.linker.428642492" name="QCC Linker" superClass="com.qnx.qcc.tool.linker">
 								<option id="com.qnx.qcc.option.linker.libraries.55300799" name="Libraries (-l)" superClass="com.qnx.qcc.option.linker.libraries" valueType="libs">
 									<listOptionValue builtIn="false" value="scoreloopcore"/>
+									<listOptionValue builtIn="false" value="Flurry"/>
+								</option>
+								<option id="com.qnx.qcc.option.linker.libraryPaths.866203997" name="Library Paths (-L)" superClass="com.qnx.qcc.option.linker.libraryPaths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/Users/sebastiankaplun/Downloads/Flurry BlackberrySDK SDK v2.0/Flurry/x86"/>
 								</option>
 							</tool>
 							<tool id="com.qnx.qcc.tool.archiver.845565076" name="QCC Archiver" superClass="com.qnx.qcc.tool.archiver"/>
@@ -210,4 +230,5 @@
 			<path value=""/>
 		</doc-comment-owner>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

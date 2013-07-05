@@ -7,6 +7,7 @@
 #define QT_DECLARATIVE_DEBUG
 #include <Qt/qdeclarativedebug.h>
 #include <bb/device/DisplayInfo>
+ #include <Flurry.h>
 
 #include "RegistrationHandler.hpp"
 
@@ -37,6 +38,8 @@ Q_DECL_EXPORT int main(int argc, char **argv)
       // TODO:  YOU MUST CHANGE THIS UUID!
       // You can generate one here: http://www.guidgenerator.com/
 	const QUuid uuid(QLatin1String("95aa9e4a-67eb-4d2e-954a-452533ca12d2"));
+
+    Flurry::Analytics::StartSession("TSYJPGP29KYCJBVWGZBC");
 
    	//! [0]
    	      // Register with BBM.
